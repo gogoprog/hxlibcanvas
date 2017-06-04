@@ -1,23 +1,19 @@
 package libcanvas;
 
 #if js
-typedef js.html.CanvasRenderingContext2D Context;
-#end
-
-#if js
-class Canvas
+@:forward
+abstract Canvas(js.html.CanvasElement) from js.html.CanvasElement to js.html.CanvasElement
 {
-    public function new(?id)
+    public function new(?id:String)
     {
         if(id == null)
         {
-
+            this = js.Browser.document.createCanvasElement();
         }
-    }
-
-    inline public function getContext2d():Context
-    {
-        
+        else
+        {
+            this = cast js.Browser.document.getElementById(id);
+        }
     }
 }
 #end
