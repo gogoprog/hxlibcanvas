@@ -1,0 +1,4 @@
+-cp ./
+-cp ../src/
+-main Test
+-js test.js

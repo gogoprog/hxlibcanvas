@@ -1,0 +1,11 @@
+{
+	"name": "hxlibcanvas",
+	"classPath": "src",
+	"url" : "https://github.com/gogoprog/hxlibcanvas",
+	"license": "MIT",
+	"tags": ["js", "canvas", "cpp", "render", "graphic"],
+	"description": "Externs for libcanvas",
+	"version": "0.0.2",
+	"releasenote": "",
+	"contributors": ["gogoprog"]
+}
