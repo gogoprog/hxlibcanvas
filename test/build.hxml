@@ -1,4 +1,12 @@
 -cp ./
 -cp ../src/
 -main Test
--js test.js
+-js build/js/Test.js
+
+--next
+
+-cp ./
+-cp ../src/
+-main Test
+-cpp build/emscripten/
+-D emscripten
