@@ -4,8 +4,13 @@ class Test
 {
     static public function main()
     {
-        var canvas = new Canvas("myCanvas");
+        trace("hxlibcanvas");
 
+        var canvas = Canvas.getById("myCanvas");
+
+        canvas.width = 512;
+
+/*
         var context = canvas.getContext2d();
 
         context.beginPath();
@@ -16,6 +21,6 @@ class Test
         context.beginPath();
         context.rect(40, 40, 150, 100);
         context.fillStyle = "blue";
-        context.fill();
+        context.fill();*/
     }
 }
