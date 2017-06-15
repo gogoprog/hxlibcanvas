@@ -4,6 +4,7 @@
     </files>
 
     <target id="haxe" tool="linker">
-        <flag value="--js-library ${haxelib:hxlibcanvas}/../libcanvas/src/lib/libcanvas.js"/>
+        <flag value="--js-library" />
+        <flag value="${haxelib:hxlibcanvas}/../libcanvas/src/lib/libcanvas.js" />
     </target>
 </xml>
