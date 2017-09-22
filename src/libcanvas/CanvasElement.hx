@@ -7,5 +7,12 @@ typedef CanvasElement = js.html.CanvasElement;
 @:include("libcanvas.h")
 @:native("Canvas")
 @:structAccess
-typedef CanvasElement = Canvas;
+@:forward
+abstract CanvasElement(Canvas) from Canvas to Canvas
+{
+    static public function getById(?id:String)
+    {
+        return new Canvas(id);
+    }
+}
 #end

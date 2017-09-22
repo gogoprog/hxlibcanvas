@@ -8,12 +8,16 @@ package libcanvas;
 extern class Canvas
 {
     @:native('getContext')
-    inline public function getContext(name:Const char *):Context
+    inline public function getContext(name:String):Context;
+
     @:native('setWidth')
-    inline public function setWidth(value:Const int):Void
+    inline public function setWidth(value:Int):Void;
+
     @:native('setHeight')
-    inline public function setHeight(value:Const int):Void
+    inline public function setHeight(value:Int):Void;
+
     @:native('glTexImage2D')
-    inline public function glTexImage2D(target:Const int, level:Const int, internalFormat:Const int, format:Const int, type:Const int):Void
+    inline public function glTexImage2D(target:Int, level:Int, internalFormat:Int, format:Int, type:Int):Void;
+
 }
 

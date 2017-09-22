@@ -15,6 +15,11 @@
                 "rule": "file-per-class",
                 "path": "src/libcanvas/{{class_name}}.hx",
                 "types": {
+                    "unsigned int" : "Int",
+                    "const int": "Int",
+                    "const char *": "String",
+                    "const float": "Float",
+                    "const bool": "Bool"
                 }
             }
         ],
