@@ -7,14 +7,5 @@ typedef CanvasElement = js.html.CanvasElement;
 @:include("libcanvas.h")
 @:native("Canvas")
 @:structAccess
-extern class CanvasElement
-{
-    @:native("Canvas::getById")
-    static public function getById(id:String):CanvasElement;
-
-    public var width(null, set):Float;
-
-    @:native("setWidth")
-    public function set_width(width:Float):Float;
-}
+typedef CanvasElement = Canvas;
 #end

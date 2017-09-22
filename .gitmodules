@@ -1,3 +1,6 @@
 [submodule "libcanvas"]
 	path = deps/libcanvas
 	url = https://github.com/gogoprog/libcanvas.git
+[submodule "deps/tbing"]
+	path = deps/tbing
+	url = https://github.com/gogoprog/tbing.git

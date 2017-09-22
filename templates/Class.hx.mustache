@@ -1,0 +1,15 @@
+package libcanvas;
+
+
+@:buildXml('<include name="${haxelib:hxlibcanvas}/build-emscripten.xml" />')
+@:include("libcanvas.h")
+@:native("{{class_name}}")
+@:structAccess
+extern class {{class_name}}
+{
+    {{#methods}}
+    @:native('{{method_other_name_camel_case}}')
+    inline public function {{method_other_name_camel_case}}({{#arguments}}{{argument_name}}:{{argument_type_pascal_case}}{{comma}}{{/arguments}}):{{result_type_pascal_case}}
+    {{/methods}}
+}
+

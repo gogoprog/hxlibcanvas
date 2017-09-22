@@ -1,0 +1,5 @@
+#!/bin/bash
+
+pushd deps/tbing
+./tbing ../..
+popd

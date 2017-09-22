@@ -1,0 +1,24 @@
+[
+    {
+        "root": "./deps/libcanvas/src/",
+        "include-relative": ".",
+        "include-dirs": [
+        ],
+        "files": [
+            "*.h"
+        ],
+        "excluded-files": [
+        ],
+        "output":[
+            {
+                "template": "./templates/Class.hx.mustache",
+                "rule": "file-per-class",
+                "path": "src/libcanvas/{{class_name}}.hx",
+                "types": {
+                }
+            }
+        ],
+        "excluded-types":[
+        ]
+    }
+]
