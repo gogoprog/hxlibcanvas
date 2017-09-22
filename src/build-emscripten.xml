@@ -1,10 +1,10 @@
 <xml>
     <files id="haxe">
-        <compilerflag value="-I${haxelib:hxlibcanvas}/../libcanvas/src/lib" />
+        <compilerflag value="-I${haxelib:hxlibcanvas}/../deps/libcanvas/src/lib" />
     </files>
 
     <target id="haxe" tool="linker">
         <flag value="--js-library" />
-        <flag value="${haxelib:hxlibcanvas}/../libcanvas/src/lib/libcanvas.js" />
+        <flag value="${haxelib:hxlibcanvas}/../deps/libcanvas/src/lib/libcanvas.js" />
     </target>
 </xml>
