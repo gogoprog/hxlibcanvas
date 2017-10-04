@@ -29,5 +29,11 @@ extern class CanvasElement
 
     @:native("Canvas::getById")
     static public function getById(id:String):CanvasElement;
+
+    @:native("Canvas::getPreloadedImage")
+    static public function getPreloadedImage(id:String):CanvasElement;
+
+    @:native("glTexImage2D")
+    function glTexImage2D(target:Int, level:Int, internalFormat:Int, format:Int, type:Int):Void;
 }
 #end
