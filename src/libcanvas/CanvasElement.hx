@@ -17,9 +17,13 @@ extern class CanvasElement
 
     @:native("setWidth")
     function set_width(width:Int):Int;
+    @:native("getWidth")
+    function get_width():Int;
 
     @:native("setHeight")
     function set_height(height:Int):Int;
+    @:native("getHeight")
+    function get_height():Int;
 
     function getContext(contextId:String):Dynamic;
 

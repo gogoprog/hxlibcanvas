@@ -9,6 +9,8 @@ class Test
         canvas.width = 512;
         canvas.height = 512;
 
+        trace('Canvas: ${canvas.width}x${canvas.height}');
+
         var context = canvas.getContext2d();
 
         context.beginPath();
