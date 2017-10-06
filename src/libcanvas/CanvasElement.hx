@@ -6,6 +6,7 @@ typedef CanvasElement = js.html.CanvasElement;
 
 #elseif (cpp && emscripten)
 
+@:build(libcanvas.Properties.build())
 @:buildXml('<include name="${haxelib:hxlibcanvas}/build-emscripten.xml" />')
 @:include("libcanvas.h")
 @:native("Canvas")
