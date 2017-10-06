@@ -58,6 +58,7 @@ extern class ImageData
 
 }
 
+@:build(libcanvas.Properties.build())
 @:native("Context")
 @:structAccess
 extern class CanvasRenderingContext2D
@@ -67,8 +68,6 @@ extern class CanvasRenderingContext2D
     var globalCompositeOperation(get, set):String;
     var strokeStyle(get, set):Style;
     var fillStyle(get, set):Style;
-    @:native("setFillStyle")
-    function set_fillStyle(fillStyle:Style):Style;
     var shadowOffsetX(get, set):Float;
     var shadowOffsetY(get, set):Float;
     var shadowBlur(get, set):Float;
@@ -83,8 +82,6 @@ extern class CanvasRenderingContext2D
     var font(get, set):String;
     var textAlign(get, set):String;
     var textBaseline(get, set):String;
-
-
 
     function save():Void;
     function restore():Void;

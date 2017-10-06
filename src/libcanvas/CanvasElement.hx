@@ -16,16 +16,6 @@ extern class CanvasElement
     var width(get, set):Int;
     var height(get, set):Int;
 
-    @:native("setWidth")
-    function set_width(width:Int):Int;
-    @:native("getWidth")
-    function get_width():Int;
-
-    @:native("setHeight")
-    function set_height(height:Int):Int;
-    @:native("getHeight")
-    function get_height():Int;
-
     function getContext(contextId:String):Dynamic;
 
     inline function getContext2d(?attribs:{}):CanvasRenderingContext2D {
