@@ -6,6 +6,7 @@ typedef CanvasElement = js.html.CanvasElement;
 
 #elseif (cpp && emscripten)
 
+@:build(libcanvas.Properties.build())
 @:buildXml('<include name="${haxelib:hxlibcanvas}/build-emscripten.xml" />')
 @:include("libcanvas.h")
 @:native("Canvas")
@@ -14,16 +15,6 @@ extern class CanvasElement
 {
     var width(get, set):Int;
     var height(get, set):Int;
-
-    @:native("setWidth")
-    function set_width(width:Int):Int;
-    @:native("getWidth")
-    function get_width():Int;
-
-    @:native("setHeight")
-    function set_height(height:Int):Int;
-    @:native("getHeight")
-    function get_height():Int;
 
     function getContext(contextId:String):Dynamic;
 
