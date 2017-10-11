@@ -113,9 +113,9 @@ extern class CanvasRenderingContext2D
     function fillText(text:String, x:Float, y:Float, ?maxWidth:Float ):Void;
     function strokeText(text:String, x:Float, y:Float, ?maxWidth:Float ):Void;
     function measureText(text:String ):TextMetrics;
-    @:overload(function(image:haxe.extern.EitherType<ImageElement,haxe.extern.EitherType<CanvasElement,haxe.extern.EitherType<VideoElement,ImageBitmap>>>, dx:Float, dy:Float ):Void {} )
-    @:overload(function(image:haxe.extern.EitherType<ImageElement,haxe.extern.EitherType<CanvasElement,haxe.extern.EitherType<VideoElement,ImageBitmap>>>, dx:Float, dy:Float, dw:Float, dh:Float ):Void {} )
-    function drawImage(image:haxe.extern.EitherType<ImageElement,haxe.extern.EitherType<CanvasElement,haxe.extern.EitherType<VideoElement,ImageBitmap>>>, sx:Float, sy:Float, sw:Float, sh:Float, dx:Float, dy:Float, dw:Float, dh:Float ):Void;
+    @:overload(function(canvas:CanvasElement, dx:Float, dy:Float ):Void {} )
+    @:overload(function(canvas:CanvasElement, dx:Float, dy:Float, dw:Float, dh:Float ):Void {} )
+    function drawImage(canvas:CanvasElement, sx:Float, sy:Float, sw:Float, sh:Float, dx:Float, dy:Float, dw:Float, dh:Float ):Void;
     function addHitRegion(?options:HitRegionOptions ):Void;
     function removeHitRegion(id:String ):Void;
     function clearHitRegions():Void;
